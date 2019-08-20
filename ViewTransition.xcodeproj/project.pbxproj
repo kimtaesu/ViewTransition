@@ -10,7 +10,7 @@
 		8C21264B91BE12667AE601B2 /* Pods_ViewTransition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37A78EF79F61CC97B8316038 /* Pods_ViewTransition.framework */; };
 		988DED61338AB8ECBBFF7D1F /* Pods_ViewTransitionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4906A40691A2E4AFB6840A9D /* Pods_ViewTransitionTests.framework */; };
 		BD99E0C5230B6C61000FFDD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD99E0C4230B6C61000FFDD8 /* AppDelegate.swift */; };
-		BD99E0C7230B6C61000FFDD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD99E0C6230B6C61000FFDD8 /* ViewController.swift */; };
+		BD99E0C7230B6C61000FFDD8 /* HeroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD99E0C6230B6C61000FFDD8 /* HeroViewController.swift */; };
 		BD99E0CA230B6C61000FFDD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD99E0C8230B6C61000FFDD8 /* Main.storyboard */; };
 		BD99E0CD230B6C61000FFDD8 /* ViewTransition.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BD99E0CB230B6C61000FFDD8 /* ViewTransition.xcdatamodeld */; };
 		BD99E0CF230B6C62000FFDD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD99E0CE230B6C62000FFDD8 /* Assets.xcassets */; };
@@ -18,7 +18,8 @@
 		BD99E0DD230B6C62000FFDD8 /* ViewTransitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD99E0DC230B6C62000FFDD8 /* ViewTransitionTests.swift */; };
 		BD99E0E8230B6CF4000FFDD8 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD99E0E7230B6CF4000FFDD8 /* ImageLoader.swift */; };
 		BD99E0EA230B6DF1000FFDD8 /* ThumbnailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD99E0E9230B6DF1000FFDD8 /* ThumbnailCell.swift */; };
-		BD99E11D230B70F3000FFDD8 /* NibForName.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD99E11C230B70F3000FFDD8 /* NibForName.swift */; };
+		BD99E11D230B70F3000FFDD8 /* StoryboardInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD99E11C230B70F3000FFDD8 /* StoryboardInitializable.swift */; };
+		BD99E11F230B72B6000FFDD8 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD99E11E230B72B6000FFDD8 /* ImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,7 @@
 		7FF2C9C732D42E4586D47167 /* Pods-ViewTransitionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewTransitionTests.release.xcconfig"; path = "Target Support Files/Pods-ViewTransitionTests/Pods-ViewTransitionTests.release.xcconfig"; sourceTree = "<group>"; };
 		BD99E0C1230B6C61000FFDD8 /* ViewTransition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewTransition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD99E0C4230B6C61000FFDD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BD99E0C6230B6C61000FFDD8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BD99E0C6230B6C61000FFDD8 /* HeroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroViewController.swift; sourceTree = "<group>"; };
 		BD99E0C9230B6C61000FFDD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BD99E0CC230B6C61000FFDD8 /* ViewTransition.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ViewTransition.xcdatamodel; sourceTree = "<group>"; };
 		BD99E0CE230B6C62000FFDD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -50,7 +51,8 @@
 		BD99E0DE230B6C62000FFDD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD99E0E7230B6CF4000FFDD8 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		BD99E0E9230B6DF1000FFDD8 /* ThumbnailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailCell.swift; sourceTree = "<group>"; };
-		BD99E11C230B70F3000FFDD8 /* NibForName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibForName.swift; sourceTree = "<group>"; };
+		BD99E11C230B70F3000FFDD8 /* StoryboardInitializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInitializable.swift; sourceTree = "<group>"; };
+		BD99E11E230B72B6000FFDD8 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		E7C185C9F66E1CBAE4A588F6 /* Pods-ViewTransition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewTransition.release.xcconfig"; path = "Target Support Files/Pods-ViewTransition/Pods-ViewTransition.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,7 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				BD99E0C4230B6C61000FFDD8 /* AppDelegate.swift */,
-				BD99E0C6230B6C61000FFDD8 /* ViewController.swift */,
+				BD99E0C6230B6C61000FFDD8 /* HeroViewController.swift */,
+				BD99E11E230B72B6000FFDD8 /* ImageViewController.swift */,
 				BD99E0C8230B6C61000FFDD8 /* Main.storyboard */,
 				BD99E0CE230B6C62000FFDD8 /* Assets.xcassets */,
 				BD99E0D0230B6C62000FFDD8 /* LaunchScreen.storyboard */,
@@ -126,7 +129,7 @@
 				BD99E0CB230B6C61000FFDD8 /* ViewTransition.xcdatamodeld */,
 				BD99E0E7230B6CF4000FFDD8 /* ImageLoader.swift */,
 				BD99E0E9230B6DF1000FFDD8 /* ThumbnailCell.swift */,
-				BD99E11C230B70F3000FFDD8 /* NibForName.swift */,
+				BD99E11C230B70F3000FFDD8 /* StoryboardInitializable.swift */,
 			);
 			path = ViewTransition;
 			sourceTree = "<group>";
@@ -316,11 +319,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD99E0EA230B6DF1000FFDD8 /* ThumbnailCell.swift in Sources */,
-				BD99E0C7230B6C61000FFDD8 /* ViewController.swift in Sources */,
-				BD99E11D230B70F3000FFDD8 /* NibForName.swift in Sources */,
+				BD99E0C7230B6C61000FFDD8 /* HeroViewController.swift in Sources */,
+				BD99E11D230B70F3000FFDD8 /* StoryboardInitializable.swift in Sources */,
 				BD99E0C5230B6C61000FFDD8 /* AppDelegate.swift in Sources */,
 				BD99E0E8230B6CF4000FFDD8 /* ImageLoader.swift in Sources */,
 				BD99E0CD230B6C61000FFDD8 /* ViewTransition.xcdatamodeld in Sources */,
+				BD99E11F230B72B6000FFDD8 /* ImageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

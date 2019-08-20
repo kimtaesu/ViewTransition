@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ThumbnailCell: UICollectionViewCell, NibForName {
+class ThumbnailCell: UICollectionViewCell {
     
     @IBOutlet weak var imageView: UIImageView!
 }
