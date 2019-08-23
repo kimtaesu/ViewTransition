@@ -13,7 +13,7 @@ class HeroViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Loading"
+        title = "Hero"
     }
 }
 
@@ -65,25 +65,25 @@ extension HeroViewController {
     }
 }
 
-
-extension HeroViewController: HeroViewControllerDelegate {
-    func heroWillStartAnimatingTo(viewController: UIViewController) {
-        if let _ = viewController as? ImageViewController,
-            let index = collectionView!.indexPathsForSelectedItems?[0],
-            let cell = collectionView!.cellForItem(at: index) as? ThumbnailCell {
-            let cellPos = view.convert(cell.imageView.center, from: cell)
-            collectionView!.hero.modifiers = [.scale(3), .translate(x:view.center.x - cellPos.x, y:view.center.y + collectionView!.contentInset.top/2/3 - cellPos.y), .ignoreSubviewModifiers, .fade]
-        } else {
-            collectionView!.hero.modifiers = [.cascade]
-        }
-    }
-    
-    func heroWillStartAnimatingFrom(viewController: UIViewController) {
-        if let _ = viewController as? ImageViewController {
-            collectionView!.hero.modifiers = [.cascade]
-        } else {
-            collectionView!.hero.modifiers = [.cascade, .delay(0.2)]
-        }
-    }
-}
-
+//
+//extension HeroViewController: HeroViewControllerDelegate {
+//    func heroWillStartAnimatingTo(viewController: UIViewController) {
+//        if let _ = viewController as? ImageViewController,
+//            let index = collectionView!.indexPathsForSelectedItems?[0],
+//            let cell = collectionView!.cellForItem(at: index) as? ThumbnailCell {
+//            let cellPos = view.convert(cell.imageView.center, from: cell)
+//            collectionView!.hero.modifiers = [.scale(3), .translate(x:view.center.x - cellPos.x, y:view.center.y + collectionView!.contentInset.top/2/3 - cellPos.y), .ignoreSubviewModifiers, .fade]
+//        } else {
+//            collectionView!.hero.modifiers = [.cascade]
+//        }
+//    }
+//    
+//    func heroWillStartAnimatingFrom(viewController: UIViewController) {
+//        if let _ = viewController as? ImageViewController {
+//            collectionView!.hero.modifiers = [.cascade]
+//        } else {
+//            collectionView!.hero.modifiers = [.cascade, .delay(0.2)]
+//        }
+//    }
+//}
+//

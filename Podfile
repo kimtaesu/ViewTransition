@@ -8,6 +8,7 @@ target 'ViewTransition' do
   # Pods for ViewTransition
   pod "Hero"
   pod 'Kingfisher', '~> 5.0'
+  pod 'AETransition'
   target 'ViewTransitionTests' do
     inherit! :search_paths
     # Pods for testing
