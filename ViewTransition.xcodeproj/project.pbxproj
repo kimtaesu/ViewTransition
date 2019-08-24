@@ -10,6 +10,11 @@
 		8C21264B91BE12667AE601B2 /* Pods_ViewTransition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37A78EF79F61CC97B8316038 /* Pods_ViewTransition.framework */; };
 		988DED61338AB8ECBBFF7D1F /* Pods_ViewTransitionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4906A40691A2E4AFB6840A9D /* Pods_ViewTransitionTests.framework */; };
 		BD149FC7230ECDC700D1E304 /* TransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD149FC6230ECDC700D1E304 /* TransitionDelegate.swift */; };
+		BD1B902D23112B3C00CCC425 /* SourceDismissAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1B902C23112B3C00CCC425 /* SourceDismissAnimator.swift */; };
+		BD1B902F23112B5300CCC425 /* SourcePresentAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1B902E23112B5300CCC425 /* SourcePresentAnimator.swift */; };
+		BD1B903123112B9400CCC425 /* InteractivePercentDrivenTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1B903023112B9400CCC425 /* InteractivePercentDrivenTransition.swift */; };
+		BD1B903323112BEE00CCC425 /* InteractiveTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1B903223112BEE00CCC425 /* InteractiveTransition.swift */; };
+		BD1B903523112C0000CCC425 /* UIInteractablePresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1B903423112C0000CCC425 /* UIInteractablePresentationController.swift */; };
 		BD99E0C5230B6C61000FFDD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD99E0C4230B6C61000FFDD8 /* AppDelegate.swift */; };
 		BD99E0C7230B6C61000FFDD8 /* HeroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD99E0C6230B6C61000FFDD8 /* HeroViewController.swift */; };
 		BD99E0CA230B6C61000FFDD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD99E0C8230B6C61000FFDD8 /* Main.storyboard */; };
@@ -45,6 +50,11 @@
 		75B54E515975623B843C3BD3 /* Pods-ViewTransition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewTransition.debug.xcconfig"; path = "Target Support Files/Pods-ViewTransition/Pods-ViewTransition.debug.xcconfig"; sourceTree = "<group>"; };
 		7FF2C9C732D42E4586D47167 /* Pods-ViewTransitionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewTransitionTests.release.xcconfig"; path = "Target Support Files/Pods-ViewTransitionTests/Pods-ViewTransitionTests.release.xcconfig"; sourceTree = "<group>"; };
 		BD149FC6230ECDC700D1E304 /* TransitionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionDelegate.swift; sourceTree = "<group>"; };
+		BD1B902C23112B3C00CCC425 /* SourceDismissAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceDismissAnimator.swift; sourceTree = "<group>"; };
+		BD1B902E23112B5300CCC425 /* SourcePresentAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourcePresentAnimator.swift; sourceTree = "<group>"; };
+		BD1B903023112B9400CCC425 /* InteractivePercentDrivenTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractivePercentDrivenTransition.swift; sourceTree = "<group>"; };
+		BD1B903223112BEE00CCC425 /* InteractiveTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveTransition.swift; sourceTree = "<group>"; };
+		BD1B903423112C0000CCC425 /* UIInteractablePresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIInteractablePresentationController.swift; sourceTree = "<group>"; };
 		BD99E0C1230B6C61000FFDD8 /* ViewTransition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewTransition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD99E0C4230B6C61000FFDD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD99E0C6230B6C61000FFDD8 /* HeroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +118,18 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		BD1B902B23112B3200CCC425 /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				BD1B902C23112B3C00CCC425 /* SourceDismissAnimator.swift */,
+				BD1B902E23112B5300CCC425 /* SourcePresentAnimator.swift */,
+				BD1B903023112B9400CCC425 /* InteractivePercentDrivenTransition.swift */,
+				BD1B903223112BEE00CCC425 /* InteractiveTransition.swift */,
+				BD1B903423112C0000CCC425 /* UIInteractablePresentationController.swift */,
+			);
+			path = Transition;
+			sourceTree = "<group>";
+		};
 		BD99E0B8230B6C60000FFDD8 = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +189,7 @@
 		BD99E123230BAFEE000FFDD8 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				BD1B902B23112B3200CCC425 /* Transition */,
 				BD99E120230BAF30000FFDD8 /* CustomViewController.swift */,
 				BD99E124230BB19B000FFDD8 /* CustomImageViewController.swift */,
 				BD149FC6230ECDC700D1E304 /* TransitionDelegate.swift */,
@@ -286,7 +309,6 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ViewTransition/Pods-ViewTransition-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AETransition/AETransition.framework",
 				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 			);
@@ -294,7 +316,6 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AETransition.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 			);
@@ -356,16 +377,21 @@
 			files = (
 				BD99E0EA230B6DF1000FFDD8 /* ThumbnailCell.swift in Sources */,
 				BD149FC7230ECDC700D1E304 /* TransitionDelegate.swift in Sources */,
+				BD1B902D23112B3C00CCC425 /* SourceDismissAnimator.swift in Sources */,
 				BD99E0C7230B6C61000FFDD8 /* HeroViewController.swift in Sources */,
 				BDE87F7F231099C20038166C /* UIViewController+Transition.swift in Sources */,
+				BD1B903123112B9400CCC425 /* InteractivePercentDrivenTransition.swift in Sources */,
 				BD99E11D230B70F3000FFDD8 /* StoryboardInitializable.swift in Sources */,
 				BDE87F7C23107C6B0038166C /* FloatingPoint+.swift in Sources */,
 				BD99E0C5230B6C61000FFDD8 /* AppDelegate.swift in Sources */,
+				BD1B903523112C0000CCC425 /* UIInteractablePresentationController.swift in Sources */,
 				BDE87F79231072180038166C /* HasTransitionId.swift in Sources */,
 				BD99E0E8230B6CF4000FFDD8 /* ImageLoader.swift in Sources */,
+				BD1B902F23112B5300CCC425 /* SourcePresentAnimator.swift in Sources */,
 				BD99E0CD230B6C61000FFDD8 /* ViewTransition.xcdatamodeld in Sources */,
 				BD99E11F230B72B6000FFDD8 /* ImageViewController.swift in Sources */,
 				BD99E121230BAF30000FFDD8 /* CustomViewController.swift in Sources */,
+				BD1B903323112BEE00CCC425 /* InteractiveTransition.swift in Sources */,
 				BD99E125230BB19B000FFDD8 /* CustomImageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
