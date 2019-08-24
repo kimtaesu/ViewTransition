@@ -23,7 +23,7 @@ class ImageViewController: UIViewController, StoryboardInitializable {
     }
     @objc func pan(panGR: UIPanGestureRecognizer) {
         let translation = panGR.translation(in: nil)
-        let progress = translation.y / 2 / view.bounds.height
+        let progress = translation.y / view.bounds.height
         switch panGR.state {
         case .began:
             hero.dismissViewController()
@@ -32,7 +32,7 @@ class ImageViewController: UIViewController, StoryboardInitializable {
             let currentPos = CGPoint(x: translation.x + view.center.x, y: translation.y + view.center.y)
             Hero.shared.apply(modifiers: [.position(currentPos)], to: imageView)
         default:
-            if progress + panGR.velocity(in: nil).y / view.bounds.height > 0.3 {
+            if progress + panGR.velocity(in: nil).y / view.bounds.height > 0.2 {
                 Hero.shared.finish()
             } else {
                 Hero.shared.cancel()

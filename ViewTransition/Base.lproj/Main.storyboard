@@ -31,7 +31,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Custom"/>
                                 <connections>
-                                    <segue destination="K2A-UD-v6k" kind="show" id="EjH-G3-OSF"/>
+                                    <segue destination="K2A-UD-v6k" kind="show" id="2mI-Wx-6dQ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -90,7 +90,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="veL-kE-b0Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-797" y="708"/>
+            <point key="canvasLocation" x="-1912" y="726"/>
         </scene>
         <!--Custom Image View Controller-->
         <scene sceneID="fBW-cg-oZy">
@@ -107,11 +107,24 @@
                                     <constraint firstAttribute="width" secondItem="dQ0-1g-LhN" secondAttribute="height" multiplier="1:1" id="m8D-Yc-CvP"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="81B-nK-msX">
+                                <rect key="frame" x="20" y="424" width="374" height="325"/>
+                                <string key="text">Based on your input, get a random alpha numeric string. The random string generator creates a series of numbers and letters that have no pattern. These can be helpful for creating security codes.
+
+
+With this utility you generate a 16 character output based on your input of numbers and upper and lower case letters.  Random strings can be unique. Used in computing, a random string generator can also be called a random character string generator. This is an important tool if you want to generate a unique set of strings. The utility generates a sequence that lacks a pattern and is random.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="81B-nK-msX" firstAttribute="leading" secondItem="oIl-SN-A3U" secondAttribute="leading" constant="20" id="4No-b2-AI7"/>
                             <constraint firstItem="dQ0-1g-LhN" firstAttribute="top" secondItem="oIl-SN-A3U" secondAttribute="top" constant="50" id="CEb-u7-h0t"/>
+                            <constraint firstItem="81B-nK-msX" firstAttribute="centerX" secondItem="oIl-SN-A3U" secondAttribute="centerX" id="DXf-bW-RMg"/>
                             <constraint firstItem="dQ0-1g-LhN" firstAttribute="centerX" secondItem="oIl-SN-A3U" secondAttribute="centerX" id="J9V-EU-CSK"/>
+                            <constraint firstItem="81B-nK-msX" firstAttribute="top" secondItem="dQ0-1g-LhN" secondAttribute="bottom" constant="30" id="Q6C-5M-vIl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oIl-SN-A3U"/>
                     </view>
@@ -121,7 +134,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l7a-U3-adX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="28" y="698"/>
+            <point key="canvasLocation" x="-1090" y="716"/>
         </scene>
         <!--Hero View Controller-->
         <scene sceneID="pcv-9P-zdW">

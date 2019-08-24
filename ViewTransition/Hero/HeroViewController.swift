@@ -56,7 +56,6 @@ extension HeroViewController {
         didSelectItemAt indexPath: IndexPath
         ) {
         let item = ImageLoader.sampleImageURLs[indexPath.item]
-        print("item: \(item)")
         
         let vc = ImageViewController.initFromStoryboard(name: "Main")
         vc.hero.isEnabled = true
